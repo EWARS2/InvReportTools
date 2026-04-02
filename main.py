@@ -18,7 +18,7 @@ platform = {
     "processor": platform.processor(),
 }
 
-
+### get info via psutil
 psutil = {
     "cores": psutil.cpu_count(),
     "ram": psutil.virtual_memory().total
