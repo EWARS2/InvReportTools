@@ -19,11 +19,11 @@ platform = {
 }
 
 
-data = {
+psutil = {
     "cores": psutil.cpu_count(),
     "ram": psutil.virtual_memory().total
 }
 
 
-platform = platform | data
 print(json.dumps(platform, indent=2))
+print(json.dumps(psutil, indent=2))
