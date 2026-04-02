@@ -8,6 +8,7 @@ except ImportError:
     HAS_PSUTIL = False
     print("Warning: psutil not installed.")
 
+### get info via platform
 platform = {
     "system": platform.system(),
     "node": platform.node(),
