@@ -1,16 +1,28 @@
-# This is a sample Python script.
+import json, platform
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+### psutil check
+try:
+    import psutil
+    HAS_PSUTIL = True
+except ImportError:
+    HAS_PSUTIL = False
+    print("Warning: psutil not installed.")
+
+platform = {
+    "system": platform.system(),
+    "node": platform.node(),
+    "release": platform.release(),
+    "version": platform.version(),
+    "machine": platform.machine(),
+    "processor": platform.processor(),
+}
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+data = {
+    "cores": psutil.cpu_count(),
+    "ram": psutil.virtual_memory().total
+}
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+platform = platform | data
+print(json.dumps(platform, indent=2))
