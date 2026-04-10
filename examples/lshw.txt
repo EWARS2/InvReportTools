@@ -1,0 +1,810 @@
+dietpi-main
+    description: Desktop Computer
+    product: AW020AV-ABA e9280t (AW020AV#ABA)
+    vendor: HP-Pavilion
+    version: Chassis Version
+    serial: MXV94302SG
+    width: 64 bits
+    capabilities: smbios-2.5 dmi-2.5 smp vsyscall32
+    configuration: boot=normal chassis=desktop family=103C_53316J sku=AW020AV#ABA uuid=6f2e8110-be46-11de-8a15-db017e84aeea
+  *-core
+       description: Motherboard
+       product: TRUCKEE
+       vendor: PEGATRON CORPORATION
+       physical id: 0
+       version: 1.04
+       serial: 101779200000612
+     *-firmware
+          description: BIOS
+          vendor: American Megatrends Inc.
+          physical id: 0
+          version: 5.27
+          date: 03/05/2010
+          size: 64KiB
+          capacity: 1MiB
+          capabilities: isa pci pnp upgrade shadowing escd cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int14serial int17printer int10video acpi usb ls120boot zipboot biosbootspecification
+     *-cpu
+          description: CPU
+          product: Intel(R) Core(TM) i7 CPU         920  @ 2.67GHz
+          vendor: Intel Corp.
+          physical id: 4
+          bus info: cpu@0
+          version: 6.26.5
+          slot: CPU 1
+          size: 2793MHz
+          width: 64 bits
+          clock: 133MHz
+          capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp x86-64 constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni dtes64 monitor ds_cpl est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 popcnt lahf_lm pti ssbd ibrs ibpb stibp dtherm ida flush_l1d cpufreq
+          configuration: cores=4 enabledcores=4 microcode=29 threads=8
+        *-cache:0
+             description: L1 cache
+             physical id: 5
+             slot: L1-Cache
+             size: 128KiB
+             capacity: 128KiB
+             capabilities: internal write-back data
+             configuration: level=1
+        *-cache:1
+             description: L2 cache
+             physical id: 6
+             slot: L2-Cache
+             size: 1MiB
+             capacity: 1MiB
+             capabilities: internal write-back unified
+             configuration: level=2
+        *-cache:2
+             description: L3 cache
+             physical id: 7
+             slot: L3-Cache
+             size: 8MiB
+             capacity: 8MiB
+             capabilities: internal write-back unified
+             configuration: level=3
+     *-memory
+          description: System Memory
+          physical id: 29
+          slot: System board or motherboard
+          size: 12GiB
+          capabilities: ecc
+          configuration: errordetection=multi-bit-ecc
+        *-bank:0
+             description: DIMM 1066 MHz (0.9 ns)
+             product: EBJ21UE8BDF0-DJ-F
+             vendor: 000000000FE02
+             physical id: 0
+             serial: SerNum0
+             slot: DIMM0
+             size: 2GiB
+             width: 64 bits
+             clock: 1066MHz (0.9ns)
+        *-bank:1
+             description: DIMM 1066 MHz (0.9 ns)
+             product: EBJ21UE8BDF0-AE-F
+             vendor: 000000000FE02
+             physical id: 1
+             serial: SerNum1
+             slot: DIMM1
+             size: 2GiB
+             width: 64 bits
+             clock: 1066MHz (0.9ns)
+        *-bank:2
+             description: DIMM 1066 MHz (0.9 ns)
+             product: EBJ21UE8BDF0-AE-F
+             vendor: 000000000FE02
+             physical id: 2
+             serial: SerNum2
+             slot: DIMM2
+             size: 2GiB
+             width: 64 bits
+             clock: 1066MHz (0.9ns)
+        *-bank:3
+             description: DIMM 1066 MHz (0.9 ns)
+             product: KP223C-ELF
+             vendor: 0000000009801
+             physical id: 3
+             serial: SerNum3
+             slot: DIMM3
+             size: 2GiB
+             width: 64 bits
+             clock: 1066MHz (0.9ns)
+        *-bank:4
+             description: DIMM 1066 MHz (0.9 ns)
+             product: EBJ21UE8BDF0-AE-F
+             vendor: 000000000FE02
+             physical id: 4
+             serial: SerNum4
+             slot: DIMM4
+             size: 2GiB
+             width: 64 bits
+             clock: 1066MHz (0.9ns)
+        *-bank:5
+             description: DIMM 1066 MHz (0.9 ns)
+             product: KP223C-ELF
+             vendor: 0000000009801
+             physical id: 5
+             serial: SerNum5
+             slot: DIMM5
+             size: 2GiB
+             width: 64 bits
+             clock: 1066MHz (0.9ns)
+     *-pci:0
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 13
+          width: 32 bits
+          clock: 33MHz
+        *-pci:0
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 13
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:24
+        *-pci:1
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             version: 13
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:25
+        *-pci:2
+             physical id: 7
+             bus info: pci@0000:00:07.0
+             version: 13
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:26 memory:fbe00000-fbefffff
+           *-pci
+                physical id: 0
+                bus info: pci@0000:06:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pci pm msi pciexpress bus_master cap_list
+                resources: memory:fbe00000-fbefffff
+              *-multimedia
+                   description: Creative
+                   physical id: 0
+                   bus info: pci@0000:07:00.0
+                   logical name: card0
+                   logical name: /dev/snd/controlC0
+                   logical name: /dev/snd/hwC0D1
+                   logical name: /dev/snd/pcmC0D0c
+                   logical name: /dev/snd/pcmC0D0p
+                   logical name: /dev/snd/pcmC0D1c
+                   logical name: /dev/snd/pcmC0D1p
+                   version: 00
+                   width: 32 bits
+                   clock: 33MHz
+                   capabilities: pm bus_master cap_list
+                   configuration: driver=snd_hda_intel latency=64 maxlatency=20 mingnt=2
+                   resources: irq:16 memory:fbefc000-fbefffff
+                 *-input:0
+                      product: HDA Creative Front Headphone
+                      physical id: 0
+                      logical name: input10
+                      logical name: /dev/input/event9
+                 *-input:1
+                      product: HDA Creative Mic
+                      physical id: 1
+                      logical name: input4
+                      logical name: /dev/input/event3
+                 *-input:2
+                      product: HDA Creative Line
+                      physical id: 2
+                      logical name: input5
+                      logical name: /dev/input/event4
+                 *-input:3
+                      product: HDA Creative Line Out Front
+                      physical id: 3
+                      logical name: input6
+                      logical name: /dev/input/event5
+                 *-input:4
+                      product: HDA Creative Line Out Surround
+                      physical id: 4
+                      logical name: input7
+                      logical name: /dev/input/event6
+                 *-input:5
+                      product: HDA Creative Line Out CLFE
+                      physical id: 5
+                      logical name: input8
+                      logical name: /dev/input/event7
+                 *-input:6
+                      product: HDA Creative Line Out Side
+                      physical id: 6
+                      logical name: input9
+                      logical name: /dev/input/event8
+        *-generic:0
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 13
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pciexpress cap_list
+             configuration: driver=i7core_edac latency=0
+             resources: irq:0
+        *-generic:1 UNCLAIMED
+             physical id: 14.1
+             bus info: pci@0000:00:14.1
+             version: 13
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pciexpress cap_list
+             configuration: latency=0
+        *-generic:2 UNCLAIMED
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 13
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pciexpress cap_list
+             configuration: latency=0
+        *-generic:3 UNCLAIMED
+             physical id: 14.3
+             bus info: pci@0000:00:14.3
+             version: 13
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+        *-network
+             description: Ethernet interface
+             physical id: 19
+             bus info: pci@0000:00:19.0
+             logical name: eth0
+             version: 00
+             serial: 90:e6:ba:59:19:d2
+             size: 1Gbit/s
+             capacity: 1Gbit/s
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+             configuration: autonegotiation=on broadcast=yes driver=e1000e driverversion=6.1.0-44-amd64 duplex=full firmware=1.8-5 ip=192.168.0.123 latency=0 link=yes multicast=yes port=twisted pair speed=1Gbit/s
+             resources: irq:27 memory:fb9c0000-fb9dffff memory:fb9ee000-fb9eefff ioport:b080(size=32)
+        *-usb:0
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:16 ioport:b400(size=32)
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 6.1.0-44-amd64 uhci_hcd
+                physical id: 1
+                bus info: usb@1
+                logical name: usb1
+                version: 6.01
+                capabilities: usb-1.10
+                configuration: driver=hub slots=2 speed=12Mbit/s
+              *-usb
+                   description: Human interface device
+                   product: Beanbag Emulation Device
+                   vendor: IOI
+                   physical id: 1
+                   bus info: usb@1:1
+                   version: 0.30
+                   serial: 0000004B
+                   capabilities: usb-2.00
+                   configuration: driver=usbhid maxpower=100mA speed=12Mbit/s
+        *-usb:1
+             physical id: 1a.1
+             bus info: pci@0000:00:1a.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:21 ioport:b480(size=32)
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 6.1.0-44-amd64 uhci_hcd
+                physical id: 1
+                bus info: usb@3
+                logical name: usb3
+                version: 6.01
+                capabilities: usb-1.10
+                configuration: driver=hub slots=2 speed=12Mbit/s
+              *-usb
+                   description: Generic USB device
+                   product: USB2.0-Ser!
+                   physical id: 2
+                   bus info: usb@3:2
+                   version: 2.54
+                   capabilities: usb-1.10
+                   configuration: driver=ch341 maxpower=96mA speed=12Mbit/s
+        *-usb:2
+             physical id: 1a.2
+             bus info: pci@0000:00:1a.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:19 ioport:b800(size=32)
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 6.1.0-44-amd64 uhci_hcd
+                physical id: 1
+                bus info: usb@5
+                logical name: usb5
+                version: 6.01
+                capabilities: usb-1.10
+                configuration: driver=hub slots=2 speed=12Mbit/s
+        *-usb:3
+             physical id: 1a.7
+             bus info: pci@0000:00:1a.7
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:18 memory:fb9f4000-fb9f43ff
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 6.1.0-44-amd64 ehci_hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 6.01
+                capabilities: usb-2.00
+                configuration: driver=hub slots=6 speed=480Mbit/s
+        *-pci:3
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:20 ioport:1000(size=4096) memory:f0000000-f01fffff ioport:f0200000(size=2097152)
+        *-pci:4
+             physical id: 1c.1
+             bus info: pci@0000:00:1c.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:2000(size=4096) memory:fbc00000-fbdfffff ioport:f0400000(size=2097152)
+           *-multimedia
+                description: CX23885
+                physical id: 0
+                bus info: pci@0000:04:00.0
+                logical name: card1
+                logical name: /dev/snd/controlC1
+                logical name: /dev/snd/pcmC1D0c
+                version: 0f
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pciexpress pm vpd msi bus_master cap_list
+                configuration: driver=cx23885 latency=0
+                resources: irq:17 memory:fbc00000-fbdfffff
+        *-pci:5
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:18 ioport:e000(size=4096) memory:fbb00000-fbbfffff ioport:f0600000(size=2097152)
+           *-firewire
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=firewire_ohci latency=0
+                resources: irq:18 memory:fbbff800-fbbfffff ioport:e800(size=256)
+        *-pci:6
+             physical id: 1c.3
+             bus info: pci@0000:00:1c.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:19 ioport:d000(size=4096) memory:fba00000-fbafffff ioport:f0800000(size=2097152)
+           *-sata
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                version: 03
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata pm pciexpress bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:19 memory:fbafe000-fbafffff
+           *-ide
+                physical id: 0.1
+                bus info: pci@0000:02:00.1
+                version: 03
+                width: 32 bits
+                clock: 33MHz
+                capabilities: ide pm pci_native_mode bus_master cap_list
+                configuration: driver=pata_jmicron latency=0
+                resources: irq:16 ioport:dc00(size=8) ioport:d880(size=4) ioport:d800(size=8) ioport:d480(size=4) ioport:d400(size=16)
+        *-usb:4
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:23 ioport:b880(size=32)
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 6.1.0-44-amd64 uhci_hcd
+                physical id: 1
+                bus info: usb@6
+                logical name: usb6
+                version: 6.01
+                capabilities: usb-1.10
+                configuration: driver=hub slots=2 speed=12Mbit/s
+        *-usb:5
+             physical id: 1d.1
+             bus info: pci@0000:00:1d.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:19 ioport:bc00(size=32)
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 6.1.0-44-amd64 uhci_hcd
+                physical id: 1
+                bus info: usb@7
+                logical name: usb7
+                version: 6.01
+                capabilities: usb-1.10
+                configuration: driver=hub slots=2 speed=12Mbit/s
+        *-usb:6
+             physical id: 1d.2
+             bus info: pci@0000:00:1d.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:18 ioport:c000(size=32)
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 6.1.0-44-amd64 uhci_hcd
+                physical id: 1
+                bus info: usb@8
+                logical name: usb8
+                version: 6.01
+                capabilities: usb-1.10
+                configuration: driver=hub slots=2 speed=12Mbit/s
+        *-usb:7
+             physical id: 1d.7
+             bus info: pci@0000:00:1d.7
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:23 memory:fb9f6000-fb9f63ff
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 6.1.0-44-amd64 ehci_hcd
+                physical id: 1
+                bus info: usb@4
+                logical name: usb4
+                version: 6.01
+                capabilities: usb-2.00
+                configuration: driver=hub slots=6 speed=480Mbit/s
+              *-usb
+                   description: Mass storage device
+                   product: USB2.0-CRW
+                   vendor: Generic
+                   physical id: 4
+                   bus info: usb@4:4
+                   logical name: scsi10
+                   version: 51.95
+                   serial: 20060413092100000
+                   capabilities: usb-2.00 scsi emulated
+                   configuration: driver=usbhid maxpower=500mA speed=480Mbit/s
+                 *-disk:0
+                      description: SCSI Disk
+                      product: Compact Flash
+                      vendor: Generic-
+                      physical id: 0.0.0
+                      bus info: scsi@10:0.0.0
+                      logical name: /dev/sdb
+                      version: 1.00
+                      capabilities: removable
+                      configuration: logicalsectorsize=512 sectorsize=512
+                    *-medium
+                         physical id: 0
+                         logical name: /dev/sdb
+                 *-disk:1
+                      description: SCSI Disk
+                      product: SM/xD-Picture
+                      vendor: Generic-
+                      physical id: 0.0.1
+                      bus info: scsi@10:0.0.1
+                      logical name: /dev/sdc
+                      version: 1.00
+                      capabilities: removable
+                      configuration: logicalsectorsize=512 sectorsize=512
+                    *-medium
+                         physical id: 0
+                         logical name: /dev/sdc
+                 *-disk:2
+                      description: SCSI Disk
+                      product: SD/MMC
+                      vendor: Generic-
+                      physical id: 0.0.2
+                      bus info: scsi@10:0.0.2
+                      logical name: /dev/sdd
+                      version: 1.00
+                      capabilities: removable
+                      configuration: logicalsectorsize=512 sectorsize=512
+                    *-medium
+                         physical id: 0
+                         logical name: /dev/sdd
+                 *-disk:3
+                      description: SCSI Disk
+                      product: MS/MS-Pro
+                      vendor: Generic-
+                      physical id: 0.0.3
+                      bus info: scsi@10:0.0.3
+                      logical name: /dev/sde
+                      version: 1.00
+                      capabilities: removable
+                      configuration: logicalsectorsize=512 sectorsize=512
+                    *-medium
+                         physical id: 0
+                         logical name: /dev/sde
+        *-pci:7
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: 90
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci bus_master cap_list
+        *-isa
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+           *-pnp00:00
+                product: PnP device PNP0c01
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:01
+                product: PnP device PNP0b00
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=rtc_cmos
+           *-pnp00:02
+                product: PnP device PNP0c02
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:03
+                product: PnP device PNP0c02
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:04
+                product: PnP device PNP0c02
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:05
+                product: PnP device PNP0c02
+                physical id: 5
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:06
+                product: PnP device PNP0c01
+                physical id: 6
+                capabilities: pnp
+                configuration: driver=system
+        *-raid
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             logical name: scsi2
+             logical name: scsi4
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: raid msi pm bus_master cap_list emulated
+             configuration: driver=ahci latency=0
+             resources: irq:28 ioport:c880(size=8) ioport:c800(size=4) ioport:c480(size=8) ioport:c400(size=4) ioport:c080(size=32) memory:fb9fc000-fb9fc7ff
+           *-disk
+                description: ATA Disk
+                product: SAMSUNG HD320KJ
+                physical id: 0
+                bus info: scsi@2:0.0.0
+                logical name: /dev/sda
+                version: 0-10
+                serial: S10MJ1SP407631
+                size: 298GiB (320GB)
+                capabilities: partitioned partitioned:dos
+                configuration: ansiversion=5 logicalsectorsize=512 sectorsize=512 signature=1bf09c71
+              *-volume
+                   description: EXT4 volume
+                   vendor: Linux
+                   physical id: 1
+                   bus info: scsi@2:0.0.0,1
+                   logical name: /dev/sda1
+                   logical name: /
+                   version: 1.0
+                   serial: ed11291f-6977-4cc1-899d-630b7ba72bae
+                   size: 298GiB
+                   capacity: 298GiB
+                   capabilities: primary bootable journaled extended_attributes large_files huge_files dir_nlink 64bit extents ext4 ext2 initialized
+                   configuration: created=2022-11-20 15:04:55 filesystem=ext4 lastmountpoint=/ modified=2026-04-01 20:32:08 mount.fstype=ext4 mount.options=rw,lazytime,noatime mounted=2026-03-17 14:40:22 state=mounted
+           *-cdrom
+                description: DVD-RAM writer
+                product: CDDVDW SH-S223Q
+                vendor: TSSTcorp
+                physical id: 1
+                bus info: scsi@4:0.0.0
+                logical name: /dev/cdrom
+                logical name: /dev/sr0
+                version: SB00
+                capabilities: removable audio cd-r cd-rw dvd dvd-r dvd-ram
+                configuration: ansiversion=5 status=nodisc
+        *-serial
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: irq:18 memory:fb9fe000-fb9fe0ff ioport:400(size=32)
+     *-pci:1
+          physical id: 101
+          bus info: pci@0000:ff:00.0
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:2
+          physical id: 102
+          bus info: pci@0000:ff:00.1
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:3
+          physical id: 103
+          bus info: pci@0000:ff:02.0
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:4
+          physical id: 104
+          bus info: pci@0000:ff:02.1
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:5
+          physical id: 105
+          bus info: pci@0000:ff:03.0
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:6
+          physical id: 106
+          bus info: pci@0000:ff:03.1
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:7
+          physical id: 107
+          bus info: pci@0000:ff:03.4
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:8
+          physical id: 108
+          bus info: pci@0000:ff:04.0
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:9
+          physical id: 109
+          bus info: pci@0000:ff:04.1
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:10
+          physical id: 10a
+          bus info: pci@0000:ff:04.2
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:11
+          physical id: 10b
+          bus info: pci@0000:ff:04.3
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:12
+          physical id: 10c
+          bus info: pci@0000:ff:05.0
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:13
+          physical id: 10d
+          bus info: pci@0000:ff:05.1
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:14
+          physical id: 10e
+          bus info: pci@0000:ff:05.2
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:15
+          physical id: 10f
+          bus info: pci@0000:ff:05.3
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:16
+          physical id: 110
+          bus info: pci@0000:ff:06.0
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:17
+          physical id: 111
+          bus info: pci@0000:ff:06.1
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:18
+          physical id: 112
+          bus info: pci@0000:ff:06.2
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+     *-pci:19
+          physical id: 113
+          bus info: pci@0000:ff:06.3
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+  *-power UNCLAIMED
+       product: Standard Efficiency
+       physical id: 1
+       capacity: 32768mWh
+  *-input:0
+       product: Power Button
+       physical id: 2
+       logical name: input1
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-input:1
+       product: Power Button
+       physical id: 3
+       logical name: input2
+       logical name: /dev/input/event1
+       capabilities: platform
+  *-input:2
+       product: PC Speaker
+       physical id: 4
+       logical name: input3
+       logical name: /dev/input/event2
+       capabilities: isa
