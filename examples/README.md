@@ -1,15 +1,15 @@
 ## msinfo32
-XML
+- XML
 
 ## Get-ComputerInfo
-TXT
-JSON (With powershell BS)
+- TXT
+- JSON (With powershell BS)
 
 ## lshw
-XML
-HTML - is this an actual document? (Yes, yes it is...)
-JSON
-TXT
+- XML
+- HTML - is this an actual document? (Yes, yes it is...)
+- JSON
+- TXT
 
-# Conclusion
+## Conclusion
 XML might be the way to go
