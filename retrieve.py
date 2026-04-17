@@ -11,6 +11,6 @@ if os.name == "nt":
     output = subprocess.check_output(['msinfo32', '/nfo', f'{hostname}.nfo'], text=True)
 elif os.name == "posix":
     print("POSIX system...")
-    output = subprocess.check_output(['sudo', 'lshw', '-xml', '|', f'{hostname}.xml'], text=True)
+    subprocess.run(f"sudo lshw -xml > {hostname}.xml", shell=True, check=True)
 
 print(output)
